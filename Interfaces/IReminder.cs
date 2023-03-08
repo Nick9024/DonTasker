@@ -17,6 +17,6 @@ public interface IReminder
     void DeleteReminder();
 
     //method to update reminder
-    void UpdateReminder();   
+    void UpdateReminder(IReminder reminder);       
     
 }
