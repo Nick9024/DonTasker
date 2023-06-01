@@ -1,7 +1,7 @@
 namespace DonTasker.Enums;
 public enum ReminderType
-    {
-        Time,
-        Location,
-        Conditional        
-    }
+{
+    Time,
+    Location,
+    Conditional
+}

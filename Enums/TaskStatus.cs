@@ -1,6 +1,6 @@
 namespace DonTasker.Enums;
 //Create TaskStatus enum
-public enum TaskStatus
+public enum TaskProgress
 {
     NotStarted,
     InProgress,

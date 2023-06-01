@@ -1,22 +1,23 @@
-namespace DonTasker.Interfaces;
+using DonTasker.Enums;
 
-//Create interface IReminder
-public interface IReminder
+namespace DonTasker.Interfaces
 {
-    //method to send reminder
-    void TriggerReminder();
+    //Create interface IReminder
+    public interface IReminder
+    {
+        //method to send reminder
+        void TriggerReminder();
 
-    //method to get reminder rule type
-    static ReminderType GetReminderType();    
+        //method to get reminder rule type
+        ReminderType GetReminderType();
 
-    //static method to create reminder of type T inheritded from IReminder
-    static T CreateReminder<T>() where T : IReminder;
+        //static method to create reminder of type T inheritded from IReminder
+        T CreateReminder<T>() where T : IReminder;
 
+        //method to delete reminder
+        void DeleteReminder();
 
-    //method to delete reminder
-    void DeleteReminder();
-
-    //method to update reminder
-    void UpdateReminder(IReminder reminder);       
-    
+        //method to update reminder
+        void UpdateReminder(IReminder reminder);
+    }
 }
