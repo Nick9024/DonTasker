@@ -1,9 +1,7 @@
-using DonTasker.Enums;
-
 namespace DonTasker.Interfaces;
 
 public interface ITask{
-    string Name { get; set; }
+    string Title { get; set; }
     string Description { get; set; }
     TaskProgress Status { get; set; }
     DateTime? DueDate { get; set; }
@@ -15,8 +13,8 @@ public interface ITask{
 
     ITask Clone();
 
-    /* void AddReminder(IReminder reminder);
-    void RemoveReminder(IReminder reminder); */
+    void AddReminder(IReminder reminder);
+    void RemoveReminder(IReminder reminder);
     void CompleteTask();
     void SetDueDate(DateTime? dueDate);
 }

@@ -4,6 +4,8 @@ namespace DonTasker.Interfaces
     public interface IReminderCondition
     {
         //method to check if condition is met
-        bool ConditionMet();
+        bool ConditionMet();      
+
+        
     }
 }

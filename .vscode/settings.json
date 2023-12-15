@@ -1,0 +1,4 @@
+{
+    "dotnet.defaultSolution": "DonTasker.sln",
+    "csharp.inlayHints.enableInlayHintsForImplicitObjectCreation": true
+}
